@@ -7,7 +7,16 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="keys.js"></script>
     <script>
+     var appKey =
+     "709d06bb198b146b91315915b5a2fd6bff7e245c307aad8214a2c11c89e52d52";
+     var clientKey = "9593094fb040d14ee9e2f25366e8184b3bcb550b76472cf4b9c1b3ea3422fd6b";
+     var ncmb = new NCMB(appKey, clientKey);
+     var TestClass = ncmb.DataStore("RegisterTest2");
+     var testRecord = new TestClass();
+     testRecord.set("message2", "hello, world");
+     testRecord.save();
     </script>
 </head>
 <body>
